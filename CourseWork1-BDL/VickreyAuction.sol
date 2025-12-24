@@ -265,7 +265,7 @@ contract VickreyAuction {
     }
 
     //5.4. Finalise auctions after bids are revealed
-    function finaliseAuction(uint auctionId) external auctionExists(auctionId){
+    function finaliseAuction(uint auctionId) external auctionExists(auctionId) {
 
         //5.4.1 access auction from storage
         auction storage auction = auctions[auctionId];
